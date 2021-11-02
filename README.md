@@ -26,7 +26,7 @@ python3 -m renamebot
 ```
 
 
-#### For Queries and support, contact [prgofficial](https://t.me/blackbulls_support)
+#### For Queries and support, contact [Black Bulls](https://t.me/blackbulls_support)
 
 ## Credits, and Thanks to Beloved Developers 
 
