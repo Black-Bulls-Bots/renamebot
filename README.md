@@ -1,6 +1,6 @@
 ## Rename Bot 
 
-An Open Source Telegram Rename Bot
+An Open Source Telegram Rename Bot Forked from https://telegram.dog/prgofficial , Rewritten by [Kishore](https://t.me/kishoreee)
 
 ---
 Rename any Telegram Files with Permanent Thumbnail Support
@@ -12,21 +12,21 @@ Rename any Telegram Files with Permanent Thumbnail Support
 
 
 ### You can tap the Deploy To Heroku button below to deploy straight to Heroku!
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/prgofficial/RenameBot-PermTB)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/jk6521/renamebot)
 
 ### Deploy in your vps
+* Rename the sample.env to .env and fill with your details
+
 ```sh
-git clone https://github.com/prgofficial/RenameBot-PermTB
-cd RenameBot-PermTB
-virtualenv -p python3 VENV
-. ./VENV/bin/activate
+git clone https://github.com/jk6521/renamebot
+cd renamebot
+python3 -m venv env
 pip install -r requirements.txt
-# <Create config.py appropriately>
-python3 -m tobrot
+python3 -m renamebot
 ```
 
 
-#### For Queries and support, contact [prgofficial](https://telegram.dog/prgofficial)
+#### For Queries and support, contact [prgofficial](https://t.me/blackbulls_support)
 
 ## Credits, and Thanks to Beloved Developers ;
 
@@ -34,3 +34,4 @@ python3 -m tobrot
 * [Dan Tès](https://telegram.dog/haskell) 
 * [Yoily](https://telegram.dog/YoilyL)
 * [Anand](https://telegram.dog/Anandpskerala)
+* [PrgOfficial] (https://github.com/prgofficial)
