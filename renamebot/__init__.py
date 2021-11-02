@@ -43,7 +43,7 @@ DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION")
 TG_MAX_FILE_SIZE = 2097152000
 CHUNK_SIZE = 128
 
-DB_URI = os.environ.get("DATABASE_URL")
+DB_URI = os.environ.get('DATABASE_URL').replace("://", "ql://", 1)
 
 START_TEXT = """ A Simple File Renamer Bot With Permanent Thumbnail support!💯
 <b>Send me any Telegram file and choose appropriate option! </b>"""
