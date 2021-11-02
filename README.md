@@ -28,10 +28,10 @@ python3 -m renamebot
 
 #### For Queries and support, contact [prgofficial](https://t.me/blackbulls_support)
 
-## Credits, and Thanks to Beloved Developers ;
+## Credits, and Thanks to Beloved Developers 
 
 * [SpEcHlDe](https://telegram.dog/SpEcHlDe) 
 * [Dan Tès](https://telegram.dog/haskell) 
 * [Yoily](https://telegram.dog/YoilyL)
 * [Anand](https://telegram.dog/Anandpskerala)
-* [PrgOfficial] (https://github.com/prgofficial)
+* [PrgOfficial](https://github.com/prgofficial)
