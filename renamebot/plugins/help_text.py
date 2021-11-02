@@ -1,36 +1,15 @@
-import logging
-logging.basicConfig(level=logging.DEBUG,
-                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-logger = logging.getLogger(__name__)
-logging.getLogger("pyrogram").setLevel(logging.WARNING)
-
-import time
-import os
-import sqlite3
-import asyncio
-
-if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
-else:
-    from config import Config
-
-from script import script
-
-import pyrogram
+from renamebot import *
 
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ForceReply
-from pyrogram.errors import UserNotParticipant
-
-from plugins.rename_file import rename_doc
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @Client.on_message(filters.command(["help"]))
 def help_user(bot, update):
     bot.send_message(
         chat_id=update.chat.id,
-        text=script.HELP_USER,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ Contact DEV ⭕️", url="https://t.me/prgofficial")]]),
+        text=HELP_USER,
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ Contact SUPPORT⭕️", url="https://t.me/blackbulls_support")]]),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -39,11 +18,10 @@ def help_user(bot, update):
 
 @Client.on_message(filters.command(["start"]))
 def send_start(bot, update):
-    # logger.info(update)
     
     bot.send_message(
         chat_id=update.chat.id,
-        text=script.START_TEXT.format(update.from_user.first_name),
+        text=START_TEXT.format(update.from_user.first_name),
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id
@@ -56,7 +34,7 @@ def upgrade(bot, update):
 
     bot.send_message(
         chat_id=update.chat.id,
-        text=script.UPGRADE_TEXT,
+        text=UPGRADE_TEXT,
         parse_mode="html",
         reply_to_message_id=update.message_id,
         disable_web_page_preview=True

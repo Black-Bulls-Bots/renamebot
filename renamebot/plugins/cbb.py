@@ -1,7 +1,7 @@
 import pyrogram
 
-from plugins.help_text import rename_cb, cancel_extract
-from plugins.rename_file import force_name
+from .help_text import rename_cb, cancel_extract
+from .rename_file import force_name
 
 
 @pyrogram.Client.on_callback_query()
